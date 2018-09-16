@@ -1,0 +1,15 @@
+<meta charset="UTF-8">
+<div ng-controller="loginController">
+	<form ng-submit="autenticar()">
+		<label>Usuário: </label>
+		 <input type="text" id="txtUsuario" ng-model="usuario.nome"/> 
+		 
+		 <label>Senha: </label>
+		<input type="password" id="txtSenta" ng-model="usuario.senha"/> 
+		
+		<input type="submit" value="Autenticar" />
+		
+		TOKEN : {{token}}
+	</form>
+</div>
+</html>

@@ -1,0 +1,12 @@
+<meta charset="UTF-8">
+<div ng-controller="estadoController">
+	<h1>Cadastro estado</h1>
+	<label>UF</label> <input type="text" ng-model="estado.uf" name="txtUf" /><br />
+	<input type="submit" value="Salvar" ng-click="cadastrarEstado()" />
+
+	<h2>Lista de Estados</h2>
+	<div ng-repeat="est in estados">
+		{{est.id+"----"+est.uf}}
+		<input type="button" value="Excluir" ng-click="excluirEstado(est)" />
+	</div>
+</div>
